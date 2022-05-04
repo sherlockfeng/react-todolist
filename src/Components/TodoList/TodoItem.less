@@ -1,0 +1,33 @@
+.todo-item {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    background-color: @yellow-6;
+    padding: 0 28px 0 12px;
+    margin: 8px 0;
+    position: relative;
+
+    &:hover {
+        .delete-item {
+            visibility: visible;
+        }
+    }
+
+    &.checked {
+        background-color: @lime-6;
+    }
+
+    .todo-item-status {
+        margin-right: 16px;
+    }
+    .delete-item {
+        position: absolute;
+        right: 12px;
+        visibility: hidden;
+    }
+    .todo-item-content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

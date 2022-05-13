@@ -11,6 +11,7 @@ function TodoContent() {
     const id = useRef(1);
 
     const addTodoItem = () => {
+        debugger
         if (!inputValue) {
             return;
         }
